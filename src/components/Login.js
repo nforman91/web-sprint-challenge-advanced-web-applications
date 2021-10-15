@@ -8,9 +8,9 @@ const Login = () => {
 
     const [credentials, setCredentials] = useState({
         username: '',
-        password: '',
-        role: ''
-    })
+        password: ''
+    });
+    const [errorMessage, setErrorMessage] = useState(false);
     
     const handleChange = e => {
         setCredentials({
@@ -21,10 +21,13 @@ const Login = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        setErrorMessage(true);
         axios.post('http://localhost:5000/api/login', credentials)
             .then(res => {
-                console.log("LOGIN RES", res)
-                // localStorage.setItem('token', res.data.token);
+                setErrorMessage(false);
+                localStorage.setItem('token', res.data.token);
+                localStorage.setItem('role', res.data.role);
+                localStorage.setItem('username', res.data.username);
                 push('/view');
             })
     }
@@ -52,7 +55,7 @@ const Login = () => {
                 />
                 <button id='submit'>Log In</button>
             </form>
-            <p id='error'>Error</p>
+            {errorMessage && <p id='error'>Error: must enter valid credentials</p>}
         </ModalContainer>
     </ComponentContainer>);
 }
