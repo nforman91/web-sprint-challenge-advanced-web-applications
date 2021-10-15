@@ -30,7 +30,7 @@ const testArticles = [
         author: 'Nathan Forman 3',
         body: 'Example Body 3',
         createdOn: 'Sunday, October 17, 2021',
-        summary: 'Example Summary',
+        summary: 'Example Summary 3',
         image: 3
     },
 ]
@@ -49,8 +49,7 @@ test("renders three articles without errors", async ()=> {
     const mockArticleService = jest.fn();
     render(<View articleService={mockArticleService} />);
     await waitFor(() => {
-        const myArticle = screen.getAllByTestId('article')
-        console.log(myArticle)
+        const myArticle = screen.getAllByTestId('article');
         expect(myArticle).toHaveLength(3);
     })
 });
