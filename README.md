@@ -13,9 +13,9 @@ You are not allowed to collaborate during the sprint challenge.
 In this challenge you will create a login page and request a token from the server that you'll use to send all other requests to the server. You will then be able to fetch the article data array, update data, and delete data.
 
 ## Project Setup
-[ ] Run npm install to install your dependencies.
-[ ]  Run npm start to run your frontend and backend code automatically.
-[ ]  Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
+[x] Run npm install to install your dependencies.
+[x]  Run npm start to run your frontend and backend code automatically.
+[x]  Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
 
 ## Project Instructions
 In this project, you will demonstrate your mastery of these skills by creating **a login page** and **basic CRUD application.** You will implement basic security using **token authentication** and build private routes within the applcation.
@@ -74,7 +74,7 @@ In this project, you will demonstrate your mastery of these skills by creating *
 * [x] Build a test that show that when the deleteButton is pressed on an Article, the handleDelete functional property is executed.
 
 > *Add the following tests within View.test.js.*
-* [ ] Build a test that shows the `View` component can render zero articles without errors. Make sure the mock service called made when View mounts.
+* [x] Build a test that shows the `View` component can render zero articles without errors. Make sure the mock service called made when View mounts.
 * [ ] Build a test that shows the `View` component can render three articles without errors. Make sure the mock service called made when View mounts.
 
 ## Important Notes:
@@ -112,12 +112,12 @@ In this project, you will demonstrate your mastery of these skills by creating *
 ```
 
 ## Submission format
-* [ ] Submit via Codegrade by commiting and pushing any new changes to **your main branch.**
+* [x] Submit via Codegrade by commiting and pushing any new changes to **your main branch.**
 * [ ] Check Codegrade before the deadline to compare its results against your local tests.
 * [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
 * [ ] New commits will be evaluated by Codegrade if pushed before the sprint challenge deadline.
 
-## Interview Questions
+## Interview Questions ***ANSWERED IN interview-answers.md***
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 1. Explain what a token is used for.

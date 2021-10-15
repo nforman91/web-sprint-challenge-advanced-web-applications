@@ -49,8 +49,9 @@ test("renders three articles without errors", async ()=> {
     const mockArticleService = jest.fn();
     render(<View articleService={mockArticleService} />);
     await waitFor(() => {
-        const myArticles = screen.queryAllByTestId('article')
-        expect(myArticles).toHaveLength(3);
+        const myArticle = screen.getAllByTestId('article')
+        console.log(myArticle)
+        expect(myArticle).toHaveLength(3);
     })
 });
 
