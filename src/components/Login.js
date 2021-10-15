@@ -58,7 +58,7 @@ const Login = () => {
                 />
                 <button id='submit'>Log In</button>
             </form>
-            {errorMessage && <p id='error'>Error: must enter valid credentials</p>}
+            {errorMessage && <p id='error'>Incorrect username / password combination.</p>}
         </ModalContainer>
     </ComponentContainer>);
 }
