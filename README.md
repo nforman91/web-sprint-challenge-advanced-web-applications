@@ -58,7 +58,7 @@ In this project, you will demonstrate your mastery of these skills by creating *
 
 * [x] `editId` is passed into the `EditForm` component. In `EditForm.js`, make a http request on mount to get the article with the id `editId`. Save the result in state.
 
-* [ ] In `View.js`, complete `handleEdit` so that a http request is made that updates the passed in article. Set the editing state to false when the request is complete. After successfully deleting the article on the api, update local state to reflect these changes.
+* [x] In `View.js`, complete `handleEdit` so that a http request is made that updates the passed in article. Set the editing state to false when the request is complete. After successfully deleting the article on the api, update local state to reflect these changes.
 
 
 ### Logout Authentication
@@ -74,8 +74,8 @@ In this project, you will demonstrate your mastery of these skills by creating *
 * [x] Build a test that show that when the deleteButton is pressed on an Article, the handleDelete functional property is executed.
 
 > *Add the following tests within View.test.js.*
-* [x] Build a test that shows the `View` component can render zero articles without errors. Make sure the mock service called made when View mounts.
-* [x] Build a test that shows the `View` component can render three articles without errors. Make sure the mock service called made when View mounts.
+* [ ] Build a test that shows the `View` component can render zero articles without errors. Make sure the mock service called made when View mounts.
+* [ ] Build a test that shows the `View` component can render three articles without errors. Make sure the mock service called made when View mounts.
 
 ## Important Notes:
 * You are welcome to create additional files but **do not move or rename existing files** or folders.
