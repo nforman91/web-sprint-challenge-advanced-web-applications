@@ -30,6 +30,9 @@ const Login = () => {
                 localStorage.setItem('username', res.data.username);
                 push('/view');
             })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     return(<ComponentContainer>
