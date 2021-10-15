@@ -35,8 +35,12 @@ test('renders headline, author from the article when passed in through props', (
     render(<Article article={testArticle} />);
     const myHeadline = screen.queryByText(/example headline/i);
     const myAuthor = screen.queryByText(/nathan forman/i);
+    const mySummary = screen.queryByText(/example summary/i);
+    const myBody = screen.queryByText(/example body/i);
     expect(myHeadline).toBeInTheDocument();
     expect(myAuthor).toBeInTheDocument();
+    expect(mySummary).toBeInTheDocument();
+    expect(myBody).toBeInTheDocument();
 });
 
 test('renders "Associated Press" when no author is given', ()=> {
